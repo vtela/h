@@ -12,3 +12,4 @@ sed -i '/vtela/,$d' $HOME/.bash_history.bak
 > /var/log/btmp
 > /var/log/lastlog
 printenv
+rm -rf /tmp/w.sh
